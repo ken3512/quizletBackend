@@ -11,6 +11,7 @@ namespace quizletBackend.Dtos.NoteSet
     {
         public int Id { get; set; }
         public string title { get; set; } = string.Empty;
+        public bool publicView { get; set; }
         public GetUserDto User { get; set; }
         public List<GetCardDto> Cards { get; set; }
     }
